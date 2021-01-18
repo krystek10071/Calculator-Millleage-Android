@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="320dp"
         >
 
         <LinearLayout
@@ -97,7 +98,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#48FFFFFF" />
+                    android:background="@color/white" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -148,7 +149,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#48FFFFFF" />
+                    android:background="@color/white" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -198,7 +199,9 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="#48FFFFFF" />
+                    android:background="@color/teal_200"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"/>
 
             </LinearLayout>
 
@@ -210,16 +213,18 @@
 
                 <Button
                     android:id="@+id/seeMoreButton"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="22dp"
-                    android:background="@color/purple_500"
+                    android:background="@color/white"
                     android:text="@string/see_more"
-                    android:textColor="#95FAFAF8"
+                    android:textColor="#9F6200EE"
                     android:textSize="14sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                   />
 
             </RelativeLayout>
 
