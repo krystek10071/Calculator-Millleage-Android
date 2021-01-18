@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FinalProjectAndroid</string>
+    <string name="calculate_burn_button">Wylicz spalanie</string>
+    <string name="historyRefuelingButton">Historia tankowań</string>
+    <string name="current_costs_in_month">Bierzący miesiąc</string>
+    <string name="amount_of_fuel_refueled">Ilość paliwa w litrach</string>
+    <string name="sum1">0</string>
+    <string name="litre"> l </string>
+    <string name="amount_kilometers">Ilość kilometrów</string>
+    <string name="kilometers">km</string>
+    <string name="spend_money">Wydane pieniądze</string>
+    <string name="currency">zł</string>
+    <string name="see_more">Zobacz więcej</string>
+</resources>
