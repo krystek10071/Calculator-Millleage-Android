@@ -208,23 +208,22 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="76dp">
+                android:layout_height="83dp">
 
 
                 <Button
                     android:id="@+id/seeMoreButton"
                     style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="150dp"
+                    android:layout_width="201dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
-                    android:layout_marginEnd="22dp"
+                    android:layout_marginEnd="20dp"
                     android:background="@color/white"
-                    android:text="@string/see_more"
+                    android:text="@string/add_fuel"
                     android:textColor="#9F6200EE"
                     android:textSize="14sp"
-                    android:textStyle="italic"
-                   />
+                    android:textStyle="italic" />
 
             </RelativeLayout>
 

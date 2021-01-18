@@ -11,4 +11,8 @@
     <string name="spend_money">Wydane pieniądze</string>
     <string name="currency">zł</string>
     <string name="see_more">Zobacz więcej</string>
+    <string name="add_fuel">Dodaj tankowanie</string>
+    <string name="enter_amount_fuel">Wprowadź ilość paliwa</string>
+    <string name="enter_kilometers_value">Wprowadź ilość kilometrów</string>
+    <string name="set_date">Ustaw Date</string>
 </resources>
