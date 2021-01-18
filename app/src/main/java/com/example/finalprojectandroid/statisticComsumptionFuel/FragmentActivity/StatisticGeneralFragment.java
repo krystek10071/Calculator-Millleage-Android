@@ -19,12 +19,10 @@ import com.example.finalprojectandroid.statisticComsumptionFuel.forms.AddFuelFor
 
 public class StatisticGeneralFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
-
     private static final String TAG="STATISTIC_GENERAL_STATIC";
     private TextView amountOfFuel, amountOfKilometers, spendMoney;
     private Button addFuelButton;
     private StatisticGeneralPre statisticGeneralPre;
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,7 +34,8 @@ public class StatisticGeneralFragment extends Fragment implements AdapterView.On
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.general_statistic_fragment, container, false);
-        initComponents(view);
+        init(view);
+
 
         //addFuelButton
         addFuelButton.setOnClickListener(view1 -> {
@@ -44,10 +43,13 @@ public class StatisticGeneralFragment extends Fragment implements AdapterView.On
             startActivity(intent);
         });
 
+
+
+
         return view;
     }
 
-    private void initComponents(View view) {
+    private void init(View view) {
         amountOfFuel = view.findViewById(R.id.textView6);
         amountOfKilometers = view.findViewById(R.id.textView7);
         spendMoney = view.findViewById(R.id.textView8);
