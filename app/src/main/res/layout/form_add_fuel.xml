@@ -6,14 +6,14 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_profit"
+        android:id="@+id/amount_fuel_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="139dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="16dp"
         app:counterEnabled="true"
         app:counterMaxLength="15"
@@ -30,10 +30,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/value_profit"
+        android:id="@+id/amount_kilometers_input"
         android:layout_width="381dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name_profit"
+        android:layout_below="@+id/amount_fuel_input"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="15dp"
@@ -53,21 +53,42 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cost_fuel"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_kilometers_input"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="15dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="15"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_cost_fuel"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <TextView
         android:id="@+id/date_profit"
         android:layout_width="249dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/value_profit"
+        android:layout_below="@+id/amount_kilometers_input"
         android:layout_alignParentStart="true"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="177dp"
         android:text="@string/set_date"
         android:textSize="20sp"
         app:errorEnabled="true" />
-
-
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingButtonProfit"
@@ -75,13 +96,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="283dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="346dp"
         android:clickable="true"
+        android:contentDescription="@string/actionbutton"
         android:focusable="true"
         android:src="@drawable/ic_control_point_white_64dp"
-        app:fabSize="normal"
-        app:srcCompat="@color/colorAccentCustom" />
+        app:backgroundTint="@color/colorAccentCustom"
+        app:fabSize="normal" />
 
     <Button
         android:id="@+id/buttonConfirmProfit"
@@ -89,10 +111,10 @@
         android:layout_height="68dp"
         android:layout_below="@+id/date_profit"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="119dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
-        android:background="@drawable/rounded_button_white"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/rounded_button"
         android:text="@string/ButtonAkceptForm" />
 
     <TextView
@@ -103,7 +125,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="29dp"
-        android:text="@string/place_name"
+        android:text="@string/form"
         android:textSize="22sp" />
 
 </RelativeLayout>
