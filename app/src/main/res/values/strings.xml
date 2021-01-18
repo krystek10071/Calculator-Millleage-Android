@@ -20,4 +20,8 @@
     <string name="form">Formularz</string>
     <string name="enter_cost_fuel">Wprowadź koszt paliwa</string>
     <string name="a">kij wie</string>
+    <string name="title_activity_calculate_consumption_fuel">CalculateConsumptionFuelActivity
+    </string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
