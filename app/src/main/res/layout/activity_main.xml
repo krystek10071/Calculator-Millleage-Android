@@ -47,7 +47,7 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/greyBackground"
             android:textSize="18sp"
             />
 
@@ -65,7 +65,7 @@
             app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/greyBackground"
             android:textSize="18sp"
             />
 

@@ -106,7 +106,8 @@
         android:contentDescription="@string/actionbutton"
         android:focusable="true"
         android:src="@drawable/ic_control_point_white_64dp"
-        app:backgroundTint="@color/colorAccentCustom"
+        app:backgroundTint="@color/colorAccent"
+        app:backgroundTintMode="screen"
         app:fabSize="normal" />
 
     <Button
