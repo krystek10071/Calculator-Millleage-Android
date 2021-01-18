@@ -1,8 +1,10 @@
-package com.example.finalprojectandroid;
+package com.example.finalprojectandroid.mainMenu;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.finalprojectandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 

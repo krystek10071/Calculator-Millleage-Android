@@ -20,12 +20,14 @@
         app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Inverse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_amount_fuel"
-            android:textColor="@color/colorAccent"
             android:imeOptions="actionDone"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="#E91E63" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,18 +94,21 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingButtonProfit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/cost_fuel"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="41dp"
         android:layout_marginEnd="34dp"
-        android:layout_marginBottom="346dp"
+        android:layout_toEndOf="@+id/date_profit"
         android:clickable="true"
-        android:contentDescription="@string/actionbutton"
         android:focusable="true"
         android:src="@drawable/ic_control_point_white_64dp"
-        app:backgroundTint="@color/colorAccentCustom"
-        app:fabSize="normal" />
+        app:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
+        app:fabSize="normal"
+        android:contentDescription="@string/a" />
 
     <Button
         android:id="@+id/buttonConfirmProfit"
