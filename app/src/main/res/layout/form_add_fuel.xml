@@ -25,6 +25,7 @@
             android:hint="@string/enter_amount_fuel"
             android:textColor="@color/colorAccent"
             android:imeOptions="actionDone"
+
             android:singleLine="true"/>
 
     </com.google.android.material.textfield.TextInputLayout>
