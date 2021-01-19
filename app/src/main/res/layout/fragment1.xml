@@ -7,16 +7,15 @@
     android:layout_height="match_parent">
 
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="108dp"
-        android:textSize="18sp"
+        android:layout_marginTop="70dp"
         android:text="@string/enterAverageFuelConsumption"
         android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,14 +59,14 @@
         android:id="@+id/editTextNumberDecimal1"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="54dp"
         android:layout_marginEnd="15dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor"
-        android:importantForAutofill="no" />
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal2"
@@ -109,12 +108,11 @@
         tools:ignore="LabelFor" />
 
 
-
     <TextView
         android:id="@+id/OutputFuelConsumption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="110dp"
         android:text="@string/information_on_consumption"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,11 +124,33 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="56dp"
         android:background="@drawable/rounded_button"
         android:text="@string/Calculate"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costPerPerson" />
+
+    <TextView
+        android:id="@+id/costTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/costTravel"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/OutputFuelConsumption" />
+
+    <TextView
+        android:id="@+id/costPerPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:text="@string/costPerPerson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costTravel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

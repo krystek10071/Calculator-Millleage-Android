@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,9 +20,9 @@ public class Fragment1 extends Fragment {
 
     EditText avaregeFuelConsumption, amountKilometers, litrePriceFuel, amountPerson;
     Button calculateButton;
-    float averageFuelConsumption, kilometers, priceFuel, person, amountRequireFuel;
+    float averageFuelConsumption, kilometers, priceFuel, person, amountRequireFuel, costTravel, costPerPerson;
     CalculateFuelFragments calculateFuelFragmentsPre;
-    TextView outPutFuelConsumption;
+    TextView outPutFuelConsumption, costTravelOutput, costPerPersonOutput;
 
     @Nullable
     @Override
@@ -40,7 +41,24 @@ public class Fragment1 extends Fragment {
             initFloatValue();
             amountRequireFuel=calculateFuelFragmentsPre.calculateRequiredAmountFuel(averageFuelConsumption, kilometers);
             setOutPutFuelConsumption(amountRequireFuel);
+            costTravel = calculateFuelFragmentsPre.calculateCostTravel(amountRequireFuel, priceFuel);
+            setCostTravel(costTravel);
+            costPerPerson = calculateFuelFragmentsPre.calculateCostPerPerson(costTravel, person);
+            setCostTravelPerPerson(costPerPerson);
+            Toast.makeText(getContext(), "Było w wymaganiach to jest :D", Toast.LENGTH_LONG).show();
         });
+    }
+
+    private void setCostTravelPerPerson(float costPerPerson) {
+        String valueInString = String.valueOf(costPerPerson);
+        String result = "Koszt w przeliczeniu na osobe: " + valueInString + " zł";
+        costPerPersonOutput.setText(result);
+    }
+
+    private void setCostTravel(float costTravel) {
+        String valueInString = String.valueOf(costTravel);
+        String result = "Koszta podróży wyniosą: " + valueInString + " zł";
+        costTravelOutput.setText(result);
     }
 
     private void setOutPutFuelConsumption(float value){
@@ -63,6 +81,8 @@ public class Fragment1 extends Fragment {
         amountPerson = view1.findViewById(R.id.editTextNumberDecimal);
         calculateButton = view1.findViewById(R.id.button);
         outPutFuelConsumption = view1.findViewById(R.id.OutputFuelConsumption);
+        costPerPersonOutput = view1.findViewById(R.id.costPerPerson);
+        costTravelOutput = view1. findViewById(R.id.costTravel);
 
     }
 }
