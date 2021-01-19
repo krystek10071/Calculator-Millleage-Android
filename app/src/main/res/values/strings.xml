@@ -33,4 +33,6 @@
     <string name="Calculate">Oblicz</string>
     <string name="costTravel">Brak informacji o kosztach podróży:</string>
     <string name="costPerPerson">Brak przeliczeniu kosztu na osobę</string>
+    <string name="addRowResult">Pomyślnie dodano wiersz</string>
+    <string name="emptyTextView" />
 </resources>

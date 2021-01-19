@@ -111,7 +111,7 @@
         app:fabSize="normal" />
 
     <Button
-        android:id="@+id/buttonConfirmProfit"
+        android:id="@+id/buttonAddToDatabase"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:layout_below="@+id/date_profit"
