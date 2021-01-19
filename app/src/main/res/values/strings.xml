@@ -22,8 +22,12 @@
     <string name="a">kij wie</string>
     <string name="title_activity_calculate_consumption_fuel">CalculateConsumptionFuelActivity
     </string>
-    <string name="tab_text_1">Symulacja spalania</string>
-    <string name="tab_text_2">Symulacja kosztów</string>
+    <string name="tab_text_1">Symulacja kosztów</string>
+    <string name="tab_text_2">Symulacja spalania</string>
     <string name="tab_text_3">Symulacja zasięgu</string>
     <string name="information_on_consumption">Brak informacji na temat spalania</string>
+    <string name="enterAverageFuelConsumption">Podaj średnie spalanie:</string>
+    <string name="enterKilometers_distance">Liczba km do pokonania</string>
+    <string name="litrePriceFuel">Cena za litr paliwa:</string>
+    <string name="admountPeople">Liczba osób:</string>
 </resources>
