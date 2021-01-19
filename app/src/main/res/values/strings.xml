@@ -30,4 +30,5 @@
     <string name="enterKilometers_distance">Liczba km do pokonania</string>
     <string name="litrePriceFuel">Cena za litr paliwa:</string>
     <string name="admountPeople">Liczba osób:</string>
+    <string name="Calculate">Oblicz</string>
 </resources>
