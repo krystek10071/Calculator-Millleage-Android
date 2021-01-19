@@ -22,7 +22,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@color/purple_700">
+                android:background="@color/colorAccent">
 
                 <TextView
                     android:id="@+id/apiaryName"
@@ -199,7 +199,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/teal_200"
+                    android:background="@color/colorAccentCustom"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"/>
 
@@ -213,17 +213,15 @@
 
                 <Button
                     android:id="@+id/addFuelButton"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="201dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@color/white"
+                    android:background="@drawable/rounded_button"
                     android:text="@string/add_fuel"
-                    android:textColor="#9F6200EE"
-                    android:textSize="14sp"
-                    android:textStyle="italic" />
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 
