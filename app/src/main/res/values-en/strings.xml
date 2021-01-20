@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FinalProjectAndroid</string>
+    <string name="calculate_burn_button">Calculate mileage</string>
+    <string name="historyRefuelingButton">History refuelling</string>
+    <string name="current_costs_in_month">Current month</string>
+    <string name="amount_of_fuel_refueled">Amount fuel in litre</string>
+    <string name="sum1">0</string>
+    <string name="litre">l</string>
+    <string name="amount_kilometers">kilometers</string>
+    <string name="kilometers">km</string>
+    <string name="spend_money">Spend money</string>
+    <string name="currency">zł</string>
+    <string name="see_more">See more</string>
+    <string name="add_fuel">Add reffuelling</string>
+    <string name="enter_amount_fuel">Enter fuel</string>
+    <string name="enter_kilometers_value">Eneter kilometers</string>
+    <string name="set_date">Set  Date</string>
+    <string name="ButtonAkceptForm">Add to Database</string>
+    <string name="actionbutton">Action Button</string>
+    <string name="form">Form</string>
+    <string name="enter_cost_fuel">Enter Cost Value</string>
+    <string name="title_activity_calculate_consumption_fuel">Calculate Consumption Fuel Activity</string>
+    <string name="tab_text_1">Cost simulation</string>
+    <string name="a">a</string>
+    <string name="tab_text_2">Comsumption Fuel Simulation</string>
+    <string name="tab_text_3">range simulation</string>
+    <string name="information_on_consumption">There is no information on combustion</string>
+    <string name="enterAverageFuelConsumption">Enter the average fuel consumption:</string>
+    <string name="enterKilometers_distance">Km to go:</string>
+    <string name="litrePriceFuel">Price per liter of fuel:</string>
+    <string name="admountPeople">Number of persons:</string>
+    <string name="Calculate">Calculate</string>
+    <string name="costTravel">No information about the costs of travel:</string>
+    <string name="costPerPerson">No cost per person</string>
+    <string name="addRowResult">Successfully added row</string>
+    <string name="emptyTextView">" "</string>
+    <string name="inputValueFuelIs">The amount of fuel entered is:</string>
+    <string name="inputValueKilometersIs">The entered number of kilometers is:</string>
+    <string name="inputCostFuelIs">The implied fuel cost is:</string>
+    <string name="youMustEnterFieldsValue">You must complete all fields</string>
+</resources>
