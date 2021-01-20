@@ -13,7 +13,16 @@
         <activity
             android:name=".calculateConsumptionFuel.activity.CalculateConsumptionFuelActivity"
             android:label="@string/title_activity_calculate_consumption_fuel"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".statisticComsumptionFuel.forms.ResponseFormsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".mainMenu.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

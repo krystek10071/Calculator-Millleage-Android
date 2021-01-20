@@ -11,25 +11,16 @@ public class RefuellingEntity {
     @ColumnInfo (name = "id")
     private Long id;
 
-    private String TypeFuel;
+    private Float amountKilometers;
     private Float AmountFuel;
-    private Float ValueFueal;
+    private Float CostFuel;
 
-    @NonNull
-    public Long getId() {
-        return id;
+    public Float getAmountKilometers() {
+        return amountKilometers;
     }
 
-    public void setId(@NonNull Long id) {
-        this.id = id;
-    }
-
-    public String getTypeFuel() {
-        return TypeFuel;
-    }
-
-    public void setTypeFuel(String typeFuel) {
-        TypeFuel = typeFuel;
+    public void setAmountKilometers(Float amountKilometers) {
+        this.amountKilometers = amountKilometers;
     }
 
     public Float getAmountFuel() {
@@ -40,11 +31,22 @@ public class RefuellingEntity {
         AmountFuel = amountFuel;
     }
 
-    public Float getValueFueal() {
-        return ValueFueal;
+    public Float getCostFuel() {
+        return CostFuel;
     }
 
-    public void setValueFueal(Float valueFueal) {
-        ValueFueal = valueFueal;
+    public void setCostFuel(Float costFuel) {
+        CostFuel = costFuel;
     }
+
+    @NonNull
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(@NonNull Long id) {
+        this.id = id;
+    }
+
+
 }

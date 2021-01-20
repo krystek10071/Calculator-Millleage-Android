@@ -35,4 +35,9 @@
     <string name="costPerPerson">Brak przeliczeniu kosztu na osobę</string>
     <string name="addRowResult">Pomyślnie dodano wiersz</string>
     <string name="emptyTextView" />
+    <string name="inputValueFuelIs">Wprowadzona ilosc paliwa to: </string>
+    <string name="inputValueKilometersIs">Wprowadzona ilość kilometrów to: </string>
+    <string name="inputCostFuelIs">Wrpwadzony koszt paliwa to: </string>
+    <string name="youMustEnterFieldsValue">Musisz uzupełnić wszystkie pola</string>
+
 </resources>

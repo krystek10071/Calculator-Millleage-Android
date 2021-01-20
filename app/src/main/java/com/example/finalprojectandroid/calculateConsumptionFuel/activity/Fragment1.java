@@ -38,15 +38,32 @@ public class Fragment1 extends Fragment {
         super.onResume();
 
         calculateButton.setOnClickListener(v1->{
-            initFloatValue();
-            amountRequireFuel=calculateFuelFragmentsPre.calculateRequiredAmountFuel(averageFuelConsumption, kilometers);
-            setOutPutFuelConsumption(amountRequireFuel);
-            costTravel = calculateFuelFragmentsPre.calculateCostTravel(amountRequireFuel, priceFuel);
-            setCostTravel(costTravel);
-            costPerPerson = calculateFuelFragmentsPre.calculateCostPerPerson(costTravel, person);
-            setCostTravelPerPerson(costPerPerson);
-            Toast.makeText(getContext(), "Było w wymaganiach to jest :D", Toast.LENGTH_LONG).show();
+            if(!fieldsIsEmpty()){
+                initFloatValue();
+                amountRequireFuel=calculateFuelFragmentsPre.calculateRequiredAmountFuel(averageFuelConsumption, kilometers);
+                setOutPutFuelConsumption(amountRequireFuel);
+                costTravel = calculateFuelFragmentsPre.calculateCostTravel(amountRequireFuel, priceFuel);
+                setCostTravel(costTravel);
+                costPerPerson = calculateFuelFragmentsPre.calculateCostPerPerson(costTravel, person);
+                setCostTravelPerPerson(costPerPerson);
+                Toast.makeText(getContext(), "Było w wymaganiach to jest :D", Toast.LENGTH_LONG).show();
+            }
         });
+    }
+
+    private boolean fieldsIsEmpty() {
+        String inputAverageFuel = avaregeFuelConsumption.getText().toString();
+        String inputKilometers = amountKilometers.getText().toString();
+        String inputPriceFuel = litrePriceFuel.getText().toString();
+        String inputPerson = amountPerson.getText().toString();
+
+        if(inputAverageFuel.isEmpty() || inputKilometers.isEmpty() || inputPriceFuel.isEmpty() || inputPerson.isEmpty()){
+            Toast.makeText(getContext(), R.string.youMustEnterFieldsValue, Toast.LENGTH_LONG).show();
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     private void setCostTravelPerPerson(float costPerPerson) {
